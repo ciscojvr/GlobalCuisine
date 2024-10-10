@@ -11,7 +11,7 @@ import SwiftUI
 struct GlobalCuisineApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            GlobalCuisineView()
         }
     }
 }

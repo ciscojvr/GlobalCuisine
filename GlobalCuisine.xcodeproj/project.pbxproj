@@ -6,8 +6,23 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		D73223192CB781BA00F417EB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = D73223182CB781BA00F417EB /* Kingfisher */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D78750B92CB79C6D00458970 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D732228E2CB7268900F417EB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D73222952CB7268900F417EB;
+			remoteInfo = GlobalCuisine;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		D73222962CB7268900F417EB /* GlobalCuisine.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalCuisine.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D78750B52CB79C6D00458970 /* GlobalCuisineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GlobalCuisineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -16,10 +31,23 @@
 			path = GlobalCuisine;
 			sourceTree = "<group>";
 		};
+		D78750B62CB79C6D00458970 /* GlobalCuisineTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = GlobalCuisineTests;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		D73222932CB7268900F417EB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D73223192CB781BA00F417EB /* Kingfisher in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78750B22CB79C6D00458970 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -33,6 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				D73222982CB7268900F417EB /* GlobalCuisine */,
+				D78750B62CB79C6D00458970 /* GlobalCuisineTests */,
 				D73222972CB7268900F417EB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				D73222962CB7268900F417EB /* GlobalCuisine.app */,
+				D78750B52CB79C6D00458970 /* GlobalCuisineTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +95,34 @@
 			);
 			name = GlobalCuisine;
 			packageProductDependencies = (
+				D73223182CB781BA00F417EB /* Kingfisher */,
 			);
 			productName = GlobalCuisine;
 			productReference = D73222962CB7268900F417EB /* GlobalCuisine.app */;
 			productType = "com.apple.product-type.application";
+		};
+		D78750B42CB79C6D00458970 /* GlobalCuisineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D78750BB2CB79C6D00458970 /* Build configuration list for PBXNativeTarget "GlobalCuisineTests" */;
+			buildPhases = (
+				D78750B12CB79C6D00458970 /* Sources */,
+				D78750B22CB79C6D00458970 /* Frameworks */,
+				D78750B32CB79C6D00458970 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D78750BA2CB79C6D00458970 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				D78750B62CB79C6D00458970 /* GlobalCuisineTests */,
+			);
+			name = GlobalCuisineTests;
+			packageProductDependencies = (
+			);
+			productName = GlobalCuisineTests;
+			productReference = D78750B52CB79C6D00458970 /* GlobalCuisineTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +137,10 @@
 					D73222952CB7268900F417EB = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					D78750B42CB79C6D00458970 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = D73222952CB7268900F417EB;
+					};
 				};
 			};
 			buildConfigurationList = D73222912CB7268900F417EB /* Build configuration list for PBXProject "GlobalCuisine" */;
@@ -94,18 +152,29 @@
 			);
 			mainGroup = D732228D2CB7268900F417EB;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				D73223172CB781BA00F417EB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = D73222972CB7268900F417EB /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				D73222952CB7268900F417EB /* GlobalCuisine */,
+				D78750B42CB79C6D00458970 /* GlobalCuisineTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D73222942CB7268900F417EB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D78750B32CB79C6D00458970 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -122,7 +191,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D78750B12CB79C6D00458970 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D78750BA2CB79C6D00458970 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D73222952CB7268900F417EB /* GlobalCuisine */;
+			targetProxy = D78750B92CB79C6D00458970 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		D73222A22CB7268A00F417EB /* Debug */ = {
@@ -302,6 +386,42 @@
 			};
 			name = Release;
 		};
+		D78750BC2CB79C6D00458970 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FGCRV72242;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozunaco.GlobalCuisineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlobalCuisine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GlobalCuisine";
+			};
+			name = Debug;
+		};
+		D78750BD2CB79C6D00458970 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = FGCRV72242;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ozunaco.GlobalCuisineTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GlobalCuisine.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GlobalCuisine";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -323,7 +443,35 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		D78750BB2CB79C6D00458970 /* Build configuration list for PBXNativeTarget "GlobalCuisineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D78750BC2CB79C6D00458970 /* Debug */,
+				D78750BD2CB79C6D00458970 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D73223172CB781BA00F417EB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D73223182CB781BA00F417EB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D73223172CB781BA00F417EB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D732228E2CB7268900F417EB /* Project object */;
 }
