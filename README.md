@@ -1,3 +1,6 @@
+# Global Cuisine
+<img src="https://github.com/user-attachments/assets/f98aec7b-4fa1-495f-9840-e38a5c864922" width="200" height="400" />
+
 # Steps to Run the App
 To run the app, simply clone the repo locally and run via Xcode.
 
