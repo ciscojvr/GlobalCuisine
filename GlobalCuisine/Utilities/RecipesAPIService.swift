@@ -12,13 +12,29 @@ protocol APIService {
 }
 
 class RecipesAPIService: APIService {
-    private let baseUrl = "https://d3jbb8n5wk0qxi.cloudfront.net"
-    private let happyEndpoint = "/recipes.json"
-    private let malformedEndpoint = "/recipes-malformed.json"
-    private let emptyEndpoint = "/recipes-empty.json"
+    var recipesMicroservice: MicroserviceAPI
+    
+    init() {
+        var recipesMicroservice = MicroserviceAPI(
+            baseURL: "https://d3jbb8n5wk0qxi.cloudfront.net"
+        )
+        recipesMicroservice.addEndpoint(
+            name: "recipes",
+            path: "/recipes.json"
+        )
+        recipesMicroservice.addEndpoint(
+            name: "malformedRecipes",
+            path: "/recipes-malformed.json"
+        )
+        recipesMicroservice.addEndpoint(
+            name: "emptyRecipes",
+            path: "/recipes-empty.json"
+        )
+        self.recipesMicroservice = recipesMicroservice
+    }
     
     func fetchRecipes() async throws -> [String: [Recipe]] {
-        guard let url = URL(string: baseUrl.appending(happyEndpoint)) else { throw RecipeAPIError.invalidURL }
+        guard let url = recipesMicroservice.url(forEndpoint: "recipes") else { throw RecipeAPIError.invalidURL }
         
         let (data, response) = try await URLSession.shared.data(from: url)
         
